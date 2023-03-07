@@ -266,7 +266,7 @@ namespace BuildMaster
 			}
 			StringBuilder stringBuilder = new StringBuilder();
 			string text = args.Parameters[0];
-			uint num = <PrivateImplementationDetails>.ComputeStringHash(text);
+			uint num = <PrivateImplementationDetails> ComputeStringHash(text);
 			if (num <= 1226617017U)
 			{
 				if (num <= 987190784U)
