@@ -115,7 +115,7 @@ namespace BuildMaster
 		}
 
 		// Token: 0x06000038 RID: 56 RVA: 0x000025B4 File Offset: 0x000007B4
-		private void OnGaming(object sender, ElapsedEventArgse)
+		private void OnGaming(object sender, ElapsedEventArgs e)
 		{
 			if (this.Players.Count == 0)
 			{
@@ -151,7 +151,7 @@ namespace BuildMaster
 		}
 
 		// Token: 0x06000039 RID: 57 RVA: 0x000026D4 File Offset: 0x000008D4
-		private void OnWaiting(object sender, ElapsedEventArgse)
+		private void OnWaiting(object sender, ElapsedEventArgs e)
 		{
 			this.ShowRoomMemberInfo();
 			if (this.Players.Count != 0)
@@ -202,7 +202,7 @@ namespace BuildMaster
 		}
 
 		// Token: 0x0600003C RID: 60 RVA: 0x00002864 File Offset: 0x00000A64
-		private void OnScoring(object sender, ElapsedEventArgse)
+		private void OnScoring(object sender, ElapsedEventArgs e)
 		{
 			if (this.Players.Count == 0)
 			{
