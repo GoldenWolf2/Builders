@@ -13,7 +13,21 @@ using Terraria;
 using Terraria.Utilities;
 using TShockAPI;
 
+namespace System.Timers  
+{  
+   public class BuildMaster
+   {  
+   }  
+}  
+  
 namespace BuildMaster
+{  
+   public class BuildMaster 
+   {  
+   }  
+}  
+  
+public class BuildMaster
 {
 	// Token: 0x02000004 RID: 4
 	public class BuildRoom : MiniRoom, IRoom
