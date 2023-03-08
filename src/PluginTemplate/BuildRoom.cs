@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Timers;
+using System.Threading.Timer;
 using System.Object;
 using Microsoft.Xna.Framework;
 using MiniGamesAPI;
