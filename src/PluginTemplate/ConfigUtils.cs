@@ -124,10 +124,10 @@ namespace BuildMaster
 		public static readonly string configPath = ConfigUtils.configDir + "/config.json";
 
 		// Token: 0x04000020 RID: 32
-		public static List<MiniRoom> rooms = new List<BuildRoom>();
+		public static List<MiniRoom> rooms = new List<Miniroom>();
 
 		// Token: 0x04000021 RID: 33
-		public static List<MiniPlayer> players = new List<BuildPlayer>();
+		public static List<MiniPlayer> players = new List<MiniPlayer>();
 
 		// Token: 0x04000022 RID: 34
 		public static MiniPack defaultPack = new MiniPack("基础套", 2);
