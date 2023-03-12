@@ -64,7 +64,7 @@ namespace BuildMaster
 		}
 
 		// Token: 0x0600004B RID: 75 RVA: 0x000034CD File Offset: 0x000016CD
-		public static void AddRoom(BuildRoom room)
+		public static void AddRoom(MiniRoom room)
 		{
 			JsonConvert.DeserializeObject<List<BuildRoom>>(File.ReadAllText(ConfigUtils.roomsPath)).Add(room);
 			File.WriteAllText(ConfigUtils.roomsPath, JsonConvert.SerializeObject(ConfigUtils.rooms, 1));
@@ -78,13 +78,13 @@ namespace BuildMaster
 		}
 
 		// Token: 0x0600004D RID: 77 RVA: 0x0000354C File Offset: 0x0000174C
-		public static BuildRoom GetRoomByID(int id)
+		public static MiniRoom GetRoomByID(int id)
 		{
 			return ConfigUtils.rooms.Find((BuildRoom r) => r.ID == id);
 		}
 
 		// Token: 0x0600004E RID: 78 RVA: 0x0000357C File Offset: 0x0000177C
-		public static BuildRoom GetRoomByIDFromLocal(int id)
+		public static MiniRoom GetRoomByIDFromLocal(int id)
 		{
 			return JsonConvert.DeserializeObject<List<BuildRoom>>(File.ReadAllText(ConfigUtils.roomsPath)).Find((BuildRoom r) => r.ID == id);
 		}
@@ -124,7 +124,7 @@ namespace BuildMaster
 		public static readonly string configPath = ConfigUtils.configDir + "/config.json";
 
 		// Token: 0x04000020 RID: 32
-		public static List<BuildRoom> rooms = new List<BuildRoom>();
+		public static List<MiniRoom> rooms = new List<BuildRoom>();
 
 		// Token: 0x04000021 RID: 33
 		public static List<BuildPlayer> players = new List<BuildPlayer>();
